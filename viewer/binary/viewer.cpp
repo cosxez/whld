@@ -70,7 +70,7 @@ int main()
 		SDL_SetRenderDrawColor(ren,0,0,0,255);
 		SDL_RenderClear(ren);
 
-		for (int i=0;i<x.size() && y.size();i++)
+		for (int i=0;i<x.size() &&i< y.size();i++)
 		{
 			SDL_SetRenderDrawColor(ren,r_c.at(i),g_c.at(i),b_c.at(i),255);
 			SDL_RenderDrawPoint(ren,x.at(i),y.at(i));

@@ -157,7 +157,7 @@ int main()
 		SDL_RenderClear(ren);
 		
 		
-		for (int i=0;i<x.size()&&y.size();i++)
+		for (int i=0;i<x.size()&& i<y.size();i++)
 		{
 			
 			SDL_SetRenderDrawColor(ren,red.at(i),green.at(i),blue.at(i),255);
