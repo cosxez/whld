@@ -17,7 +17,7 @@
 `sudo dnf install gcc-c++ opencv-devel SDL2-devel`
 
 #### Arch:
-`sudo pacman -S gcc opencv sdl2`
+`sudo pacman -S g++ opencv sdl2`
 
 ## Compilation:
 
