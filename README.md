@@ -2,17 +2,23 @@
 
 ## Compilation:
 #### Dependencies for compilation:
+
 `g++` - Compiler
+
 `SDL2` - For Display 
+
 `Opencv` - For Convert
 
-Debian:
+#### Debian:
+
 `sudo apt install g++ libsdl2-dev libopencv-dev`
 
-Fedora:
+#### Fedora:
+
 `sudo dnf install gcc-c++ opencv-devel SDL2-devel`
 
-Arch:
+#### Arch:
+
 `sudo pacman -S gcc opencv sdl2`
 
 #### Compilation converter:
