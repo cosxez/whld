@@ -18,14 +18,18 @@ Arch:
 #### Compilation converter:
 
 convert/to_binary/convert_to_binary.cpp
+
 `g++ convert_to_binary.cpp -o convert_to_binary $(pkg-config -cflags -libs opencv4)`
 
 convert/to_text/convert_to_text.cpp
+
 `g++ convert_to_text.cpp -o convert_to_text $(pkg-config -cflags -libs opencv4)`
 
 #### Compilation viewer:
 viewer/binary/viewer.cpp
+
 `g++ viewer.cpp -o viewer -lSDL2`
 
 viewer/text/viewer.cpp
+
 `g++ viewer.cpp -o viewer -lSDL2`
