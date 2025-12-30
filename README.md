@@ -5,7 +5,9 @@
 #### Dependencies:
 
 `g++` - Compiler
+
 `SDL2` - For Display 
+
 `Opencv` - For Convert
 
 #### Debian:
