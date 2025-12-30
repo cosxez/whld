@@ -2,13 +2,13 @@
 
 ## Structure binary file:
 
-<img src="https://github.com/cosxez/whld/blob/main/struct_binary_file.png" width="400" height="300"/>
+<img src="https://github.com/cosxez/whld/blob/main/struct_binary_file.png" width="600" height="400"/>
 
 **Each number in the uint8_t range stores 1 byte.**
 
 ## Structure text file:
 
-<img src="https://github.com/cosxez/whld/blob/main/struct_text_file.png" width="400" height="300"/>
+<img src="https://github.com/cosxez/whld/blob/main/struct_text_file.png" width="600" height="400"/>
 
 **The size depends on the length of the string since 1 character = 1 byte**
 
