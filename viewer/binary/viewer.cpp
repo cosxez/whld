@@ -79,5 +79,5 @@ int main()
 		}
 		SDL_RenderPresent(ren);
 	}
-	SDL_QUIT;	
+	SDL_Qui();	
 }
