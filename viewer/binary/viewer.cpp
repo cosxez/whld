@@ -2,6 +2,7 @@
 #include <fstream>
 #include <vector>
 #include <SDL2/SDL.h>
+#include <string>
 
 using namespace std;
 
