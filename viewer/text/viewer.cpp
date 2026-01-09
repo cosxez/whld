@@ -2,6 +2,7 @@
 #include <SDL2/SDL.h>
 #include <fstream>
 #include <vector>
+#include <string>
 
 using namespace std;
 
@@ -9,7 +10,7 @@ int main()
 {
 	cout<<"Enter filename: ";
 	string file_name;
-	cin>>file_name;
+	getline(cin,file_name);
 
 	ifstream file(file_name);
 	
