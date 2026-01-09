@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <opencv2/opencv.hpp>
+#include <string>
 
 using namespace std;
 using namespace cv;
@@ -9,13 +10,13 @@ int main()
 {
 	cout<<"Enter filename: ";
 	string filename;
-	cin>>filename;
+	getline(cin,filename);
 	int w;
 	int h;
 	cout<<"Enter width: ";
-	cin>>w;
+	getline(cin,w);
 	cout<<"Enter height: ";
-	cin>>h;
+	getline(cin,h);
 	Mat img=imread(filename);
 	resize(img,img,Size(w,h));
 	ofstream file("image.whld");
