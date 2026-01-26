@@ -55,18 +55,17 @@ int main()
 
 	SDL_Renderer* ren=SDL_CreateRenderer(win,-1,SDL_RENDERER_ACCELERATED);
 
-	bool run=true;
 	SDL_Event event;
 
-	while (run)
+	while (true)
 	{
-		while (SDL_PollEvent(&event))
+		SDL_PollEvent(&event);
+
+		if (event.type==SDL_QUIT)
 		{
-			if (event.type==SDL_QUIT)
-			{
-				run=false;
-			}
+			break;
 		}
+		
 		
 		SDL_SetRenderDrawColor(ren,0,0,0,255);
 		SDL_RenderClear(ren);
