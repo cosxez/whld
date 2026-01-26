@@ -80,4 +80,5 @@ int main()
 		SDL_RenderPresent(ren);
 	}
 	SDL_Qui();	
+	SDL_DestroyWindow(win);
 }
