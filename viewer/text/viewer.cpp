@@ -14,7 +14,6 @@ int main()
 
 	ifstream file(file_name);
 	
-
 	char ch;
 
 	string str;
@@ -172,5 +171,5 @@ int main()
 		
 	}
 	SDL_Quit();
-	
+	SDL_DestroyWindow(window);
 }
