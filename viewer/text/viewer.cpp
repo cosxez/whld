@@ -140,15 +140,17 @@ int main()
 
 	SDL_Renderer* ren=SDL_CreateRenderer(window,-1,SDL_RENDERER_ACCELERATED);
 
+	bool run=true;
 	SDL_Event event;
 	
 	while (true)
 	{
-		SDL_PollEvent(&event);
-
-		if (event.type==SDL_QUIT)
+		 while (SDL_PollEvent(&event))
 		{
-			break;
+			if (event.type==SDL_QUIT)
+			{
+				run=false;
+			}
 		}
 
 		SDL_SetRenderDrawColor(ren,0,0,0,255);
@@ -170,4 +172,5 @@ int main()
 	}
 	SDL_Quit();
 	SDL_DestroyWindow(window);
+	return 0;
 }
