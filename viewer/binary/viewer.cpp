@@ -54,18 +54,18 @@ int main()
 	SDL_Window* win=SDL_CreateWindow(path.c_str(),SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED,width,height,SDL_WINDOW_SHOWN);
 
 	SDL_Renderer* ren=SDL_CreateRenderer(win,-1,SDL_RENDERER_ACCELERATED);
-
+	bool run=true;
 	SDL_Event event;
 
-	while (true)
+	while (run)
 	{
-		SDL_PollEvent(&event);
-
-		if (event.type==SDL_QUIT)
+		while (SDL_PollEvent(&event))
 		{
-			break;
+			if (event.type==SDL_QUIT)
+			{
+				run=false;
+			}
 		}
-		
 		
 		SDL_SetRenderDrawColor(ren,0,0,0,255);
 		SDL_RenderClear(ren);
@@ -78,6 +78,7 @@ int main()
 		}
 		SDL_RenderPresent(ren);
 	}
-	SDL_Qui();	
+	SDL_Quit();	
 	SDL_DestroyWindow(win);
+	return 0;
 }
