@@ -143,7 +143,7 @@ int main()
 	bool run=true;
 	SDL_Event event;
 	
-	while (true)
+	while (run)
 	{
 		 while (SDL_PollEvent(&event))
 		{
