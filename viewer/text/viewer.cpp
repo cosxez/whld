@@ -132,11 +132,8 @@ int main()
 		}
 		
 	}
-
 	
-
 	SDL_Window* window=SDL_CreateWindow(file_name.c_str(),SDL_WINDOWPOS_CENTERED,SDL_WINDOWPOS_CENTERED,width,height,SDL_WINDOW_SHOWN);
-	
 
 	SDL_Renderer* ren=SDL_CreateRenderer(window,-1,SDL_RENDERER_ACCELERATED);
 
@@ -156,12 +153,9 @@ int main()
 		SDL_SetRenderDrawColor(ren,0,0,0,255);
 		SDL_RenderClear(ren);
 		
-		
 		for (int i=0;i<x.size()&& i<y.size();i++)
-		{
-			
+		{	
 			SDL_SetRenderDrawColor(ren,red.at(i),green.at(i),blue.at(i),255);
-			
 			SDL_RenderDrawPoint(ren,x.at(i),y.at(i));	
 		}
 		
