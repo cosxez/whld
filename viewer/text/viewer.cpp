@@ -13,7 +13,7 @@ int main()
 	getline(cin,file_name);
 
 	ifstream file(file_name);
-	
+	if (!file.is_open()){return -1;}
 	char ch;
 
 	string str;
@@ -145,7 +145,7 @@ int main()
 	
 	while (run)
 	{
-		 while (SDL_PollEvent(&event))
+		while (SDL_PollEvent(&event))
 		{
 			if (event.type==SDL_QUIT)
 			{
@@ -162,13 +162,11 @@ int main()
 			
 			SDL_SetRenderDrawColor(ren,red.at(i),green.at(i),blue.at(i),255);
 			
-			SDL_RenderDrawPoint(ren,x.at(i),y.at(i));
-			
-				
+			SDL_RenderDrawPoint(ren,x.at(i),y.at(i));	
 		}
 		
 		SDL_RenderPresent(ren);
-		
+		SDL_Delay(40);	
 	}
 	SDL_Quit();
 	SDL_DestroyWindow(window);

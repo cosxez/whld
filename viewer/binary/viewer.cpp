@@ -19,6 +19,7 @@ int main()
 	cout<<"Enter filename: ";
 	getline(cin,path);
 	ifstream file(path,ios::binary);
+	if (!file.is_open()){return -1;}
 	Image img;
 	unsigned int width;
 	unsigned int height;
@@ -77,6 +78,7 @@ int main()
 
 		}
 		SDL_RenderPresent(ren);
+		SDL_Delay(40);
 	}
 	SDL_Quit();	
 	SDL_DestroyWindow(win);
